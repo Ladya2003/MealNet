@@ -1,0 +1,208 @@
+/*общие и системные настройки*/
+
+body {
+  background-color: black;
+  color: white;
+}
+/*no scroll bar*/
+::-webkit-scrollbar {
+  width: 0;
+}
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*навигация*/
+
+.navigation li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px;
+  font-size: 25px;
+  font-family: Agency FB;
+}
+.navigation {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(192, 151, 133, 0.842);
+  box-shadow: inset 0 0 13px white;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.logo {
+  position: absolute;
+  left: 93%;
+  top: 3%;
+  width: 80px;
+}
+
+/*заголовок*/
+
+.header {
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.header__text {
+  background-color: rgba(0, 0, 0, 0.438);
+  margin: -10px;
+  z-index: 2;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+i {
+  font-weight: 900;
+  font-size: 27px;
+  text-decoration: underline;
+}
+.header h2,
+.header h3 {
+  letter-spacing: 4px;
+}
+.header__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*конент-плитка ресторанов*/
+
+.content {
+  position: relative;
+  background-color: black;
+  margin: 0 -10px -10px -10px;
+  padding: 20px;
+}
+.content__restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.content__restaurant_bg {
+  width: 700px;
+  height: 400px;
+  margin: 10px;
+  transition: 0.2s;
+}
+.content__restaurant_bg:hover {
+  box-shadow: 0 0 13px white;
+}
+.balcon_logo {
+  position: absolute;
+  width: 40px;
+  height: 170px;
+  left: 360px;
+  top: 120px;
+}
+.balcon_header {
+  font-family: TT Masters DEMO Birds Regular;
+  position: absolute;
+  font-size: 28px;
+  text-shadow: 1px 1px 3px black;
+  top: 40px;
+  left: 47%;
+}
+.balcon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paris_header {
+  font-family: TT Masters DEMO Birds Regular;
+  position: absolute;
+  font-size: 28px;
+  text-shadow: 1px 1px 3px black;
+  top: 40px;
+}
+.paris_logo {
+  position: absolute;
+}
+.myata_loyage_logo {
+  position: absolute;
+  width: 150px;
+}
+
+/*контент-новости*/
+
+.content__news h3 {
+  text-align: center;
+  font-size: 27px;
+  margin: 40px;
+}
+.news {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+.news_photo {
+  width: 400px;
+  height: auto;
+}
+
+/*contacts*/
+.hr_line {
+  width: 30%;
+  height: 10px;
+  background-color: pink;
+  position: relative;
+  margin: 10px 0 0 0;
+}
+.footer {
+  background-color: white;
+  color: rgb(107, 107, 107);
+  width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  margin: -40px 30px 0 -10px;
+}
+.footer p {
+  padding: 20px 10% 20px 10%;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 15% 0 19%;
+}
+.contacts a:link,
+.contacts a:visited {
+  text-decoration: underline;
+}
+.contacts a:hover {
+  color: red;
+}
+.contacts a:active {
+  color: blue;
+}
+.contacts div {
+  padding-right: 50px;
+}
+.footer__hr {
+  width: 80%;
+}
+strong {
+  top: 0;
+  position: absolute;
+  left: 90%;
+}
